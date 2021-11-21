@@ -17,34 +17,39 @@
 <title>Weather API</title>
 </head>
 <body>
-<!-- TAKE OUT LATER -->
-<h1>SOME WEATHER STUFF ☀🌦❄</h1>
+
+<h1>Enter a city name to <br> check out the weather! ☀🌦❄</h1>
 
 <!-- Weather widget -->
-<div class="main container">
-
+<div class="main-container">
+    <div class="form">
     <form name ="testData" id="dataForm">
         <label for="round">City:</label>
-        <input type="text" name="city_name" id="city">
+        <input type="text" name="city_name" id="city_name">
     
         <button type="submit" class="btn btn-primary" id="faraButton" onclick="getFara(city_name.value)">℉</button>
     
         <button type="submit" class="btn btn-danger" id="celButton" onclick="getCel(city_name.value)">℃</button>
     
     </form>
+    </div>
 
     <section class="weather-section"> <!--list-group racer-list-->
-        <table class='table' style='display: none;' id="weatherTable">
-            <thead>
-                <tr>
-                    <th scope='col'>Forecast</th>
-                    <th scope='col'>High</th>
-                    <th scope='col'>Low</th>
-                    <th scope='col'>Humidity</th>
-                </tr>
-            </thead>
-            <tbody id="weatherTableBody"></tbody>
-        </table>
+        <div class="container" id="city">
+        </div>
+
+        <div class="container" id="high">
+        </div>
+
+        <div class="container" id="low">
+        </div>
+
+        <div class="container" id="forecast">
+        </div>
+
+        <div class="container" id="humidity">
+        </div>
+
     </section>
 
 </div>

@@ -1,0 +1,31 @@
+h1{
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+
+body{
+    background-image: url("/images/lake-sunset.jpg");
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+
+.form {
+    background-color: rgba(55, 55, 55, .4);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.weather-section {
+    background-color: rgba(55, 55, 55, .4);
+}
+
+#city{
+    color: white;
+    font-size: xx-large;
+}
