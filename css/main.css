@@ -2,6 +2,8 @@ h1{
     color: white;
     margin-top: 5%;
     text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI';
 }
 
 body{
@@ -11,21 +13,43 @@ body{
 }
 
 .form {
-    background-color: rgba(55, 55, 55, .4);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 60px;
-    padding-right: 60px;
+    background-color: rgba(55, 55, 55, .5);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white;
+    text-align: center;
+}
+
+#city_name {
+    border-color: white;
+    border-width: 3px;
+    border-radius: 10px;
+    padding-left: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#faraButton, #celButton {
+    background-color:rgba(55, 55, 55, .5);
 }
 
 .weather-section {
-    background-color: rgba(55, 55, 55, .4);
+    background-color: rgba(55, 55, 55, .5);
+    border-radius: 10px;
+    color: white;
+    font-size: 18pt;
+    margin: 2% 30%;
+    padding: 1%;
+    text-align: center;
 }
 
 #city{
     color: white;
-    font-size: xx-large;
+    font-size: 30pt;
+    padding-bottom: 5%;
 }
