@@ -7,7 +7,7 @@ const getFara = async(city_name) => {
     document.getElementById('high').innerHTML = "High: " + response.data.main.temp_max + "℉"
     document.getElementById('low').innerHTML = "Low: " + response.data.main.temp_min + "℉"
     document.getElementById('humidity').innerHTML = "Humidity: " + response.data.main.humidity + "%"
-    console.log(response.data)
+    
     console.log(response.data.weather[0].main)
     console.log(response.data.main.temp_max + "℉")
     console.log(response.data.main.temp_min + "℉")
@@ -51,23 +51,19 @@ form.addEventListener('submit', ( event ) => {
     console.log('start')
 })
 
-const weatherTableBody = document.querySelector("#weatherTableBody");
 
-
-const weatherTable = document.querySelector('.table')
-
-let response = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=167cee4a37db710c8f0a62064838265f`)
+// let response = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=167cee4a37db710c8f0a62064838265f`)
 
 
 // test function to change background image
-function setClear(weatherSection) {
-    let response = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=167cee4a37db710c8f0a62064838265f`)
+// function setClear(weatherSection) {
+//     let response = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=167cee4a37db710c8f0a62064838265f`)
 
-    var weather_sec = document.getElementById(weatherSection);
-    if(response.data.weather[0].main == "Clear"){
-        weather_sec.style.backgroundColor= "red";
-    }
-}
+//     var weather_sec = document.getElementById(weatherSection);
+//     if(response.data.weather[0].main == "Clear"){
+//         weather_sec.style.backgroundColor= "red";
+//     }
+// }
 
 
 // path for max temp: main.temp_max

@@ -7,7 +7,7 @@ h1{
 }
 
 body{
-    background-image: url("/images/lake-sunset.jpg");
+    background-image: url("../images/lake-sunset.jpg");
     background-size: cover;
     background-repeat:repeat-y;
 }
